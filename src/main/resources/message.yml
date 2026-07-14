@@ -1,0 +1,77 @@
+is-afk: В Афк
+is-not-afk: Не в Афк
+noPermission: '&cУ вас нет прав'
+help:
+  - '&fПомощь по команде &e/index:'
+  - '&r &f- /index reload - перезагрузка конфигурации'
+  - '&r &f- /index debug <ник игрока> - отслеживание получения очков'
+  - '&r &f- /index delete <игрок/#all> [за какие дни] [смещение в днях] - удаление статистики игрока'
+  - '&r &f- /index addpoint <ник игрока> <количество> - добавление очков'
+  - '&r &f- /index player <ник игрока> [период] [смещение в днях] - узнать статистику
+  игрока'
+  - '&r &f- /index top <кол-во мест> <best/worst> - показать топ'
+  - '&r &f- /index average <кол-во дней> - показать средний индекс у игроков'
+configReloaded: '&fКонфигурация перезагружена'
+debugHelp: '&cОшибка, используйте /index debug <ник игрока>'
+playerNotFound: '&cИгрок не найден'
+debugModeOn: '&fВключено отслеживание получения очков для игрока &e%player%'
+debugModeOff: '&fВыключено отслеживание получения очков для игрока &e%player%'
+statsDeleted: '&fСтатистика успешно удалена'
+enterNumber: '&cОшибка введите число'
+addpointHelp: '&cОшибка, исполняйте команду /index addpoint <ник игрока> <количество>'
+reloadHelp: '&cОшибка, исполняйте команду /index reload'
+sortHelp: '&cОшибка, исполняйте команду /index sort <best/worst> <кол-во> <placeholder>'
+hologramCreateHelp: '&cОшибка, исполняйте команду /index hologram create <имя>'
+hologramRemoveHelp: '&cОшибка, исполняйте команду /index hologram remove <имя> [completely]'
+hologramRestoreHelp: '&cОшибка, исполняйте команду /index hologram restore <имя>'
+averageHelp: '&cОшибка, исполняйте команду /index average <index/points/afkTime/activeTime/time>'
+addpointAll: '&fВсем игрокам добавлено &e%points% очков'
+addpointPlayer: '&fВы успешно добавили &e%points% очков игроку &e%player%'
+playerNotOnline: '&cИгрок не в сети'
+deleteHelp: '&cОшибка, используйте /index delete <игрок/#all/#online>  [период]  [смещение
+  в днях] [true/false]'
+playerHelp: '&cОшибка, используйте /index player <ник игрока> [период] [смещение в
+  днях]'
+playerStats:
+  - '&dVPIndex &8| &fИнформация об игроке &7%player%:'
+  - '&r &7Активность: &b%index%'
+  - '&r &7Поинтов: &e%points%'
+  - '&r &7Наигранное время: &f%time%'
+  - '&r &7Время в AFK: &f%afktime%'
+  - '&r &7Активное время: &5%activetime%'
+sortingError: '&cПроизошла ошибка в сортировке!'
+hologramCreated: '&fГолограмма &a%hologram% &fуспешно создана!'
+hologramRestored: '&fГолограмма &a%hologram% &fуспешно восстановлена!'
+hologramDeleted: '&fГолограмма &a%hologram% &fуспешно удалена!'
+noHologram: '&cТакой голограммы не существует!'
+topHelp: '&cОшибка, используйте /index top <кол-во мест> <best/worst>'
+top:
+  index:
+    header: '&a[ТОП %count% ПО ИНДЕКСУ]'
+    format: '&6%position% &f| &a%player% &f | &d%value%'
+    footer: '&a[%type_uppercase%]'
+  points:
+    header: '&a[ТОП %count% ПО ПОИНТАМ]'
+    format: '&6%position% &f| &a%player% &f | &d%value%'
+    footer: '&a[%type_uppercase%]'
+  time:
+    header: '&a[ТОП %count% ПО ВРЕМЕНИ В ИГРЕ]'
+    format: '&6%position% &f| &a%player% &f | &d%value%'
+    footer: '&a[%type_uppercase%]'
+  afkTime:
+    header: '&a[ТОП %count% ПО ВРЕМЕНИ В АФК]'
+    format: '&6%position% &f| &a%player% &f | &d%value%'
+    footer: '&a[%type_uppercase%]'
+  activeTime:
+    header: '&a[ТОП %count% ПО ВРЕМЕНИ В ОНЛАЙНЕ]'
+    format: '&6%position% &f| &a%player% &f | &d%value%'
+    footer: '&a[%type_uppercase%]'
+average:
+  indexFormat: '&rСредний индекс игроков: &a%average%'
+  pointsFormat: '&rСреднее кол-во поинтов игроков: &a%average%'
+  timeFormat: '&rСреднее кол-во времени в игре: &a%average%'
+  afkTimeFormat: '&rСреднее кол-во времени в афк: &a%average%'
+  activeTimeFormat: '&rСреднее кол-во времени в онлайне: &a%average%'
+menu:
+  lastPage: '&rВы уже на последней странице!'
+  firstPage: '&rВы уже на первой странице!'

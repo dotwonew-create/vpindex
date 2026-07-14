@@ -1,0 +1,431 @@
+settings:
+  afk-threshold: 5m #требуемое время, через которое если игрок бездействует, то значит он встает в состояние AFK
+  update-time: 1h #время для обновления статистики в плейсхолдере %activity_index%
+  clear: 40d #Удаление статистики
+  total-time: 30 #время для %activity_index%
+  white-list: true #если включено то игроки которые не в вайтлисте не будут вообще считаться
+
+  hologram-distance: 10 #расстояние с которого голограммы начинают обновляться
+  holograms-update-timer: 1 #таймер обновления голограмм (в секундах)
+
+events:
+  block_break: #ломается блок
+    default:
+      maxtime: 2m
+      enable: true #Включение ивента
+      points: 1 #Очки за ивент
+      time: 1m #Время до снижения очков
+      minimum: 0.01 #Возможный минимум очков
+      reset: 15s #Длительность ивента
+      demotion: 0.1 #Снижение очков каждое время до снижения
+    deepslate:
+      points: 2
+      minimum: 0.1
+      demotion: 0.1
+    crying_obsidian:
+      points: 3
+      minimum: 0.1
+      demotion: 0.1
+    obsidian:
+      points: 3
+      minimum: 0.1
+      demotion: 0.1
+    end_stone:
+      points: 2
+      minimum: 0.1
+      demotion: 0.1
+    ancient_debris:
+      points: 3
+      time: 30s
+      minimum: 0.01
+      reset: 20s
+      demotion: 1.5
+    spawner:
+      points: 10
+      minimum: 0.1
+      demotion: 0.1
+    gilded_blackstone:
+      points: 3
+      time: 10s
+      minimum: 0.01
+      reset: 20s
+      demotion: 1.5
+    wet_sponge:
+      points: 3
+      time: 1m
+      minimum: 0.001
+      reset: 20s
+      demotion: 1
+    chorus_flower:
+      points: 2
+      minimum: 0.01
+      demotion: 0.1
+    budding_amethyst:
+      points: 5
+      minimum: 0.1
+      demotion: 1
+    calcite:
+      points: 2
+      time: 1m
+      minimum: 0.01
+      demotion: 0.5
+    sculk_sensor:
+      points: 1.5
+      time: 20s
+      minimum: 0.01
+      reset: 20s
+      demotion: 0.5
+    sculk_catalyst:
+      points: 3
+      time: 10s
+      minimum: 0.01
+      reset: 20s
+      demotion: 1
+    sculk_shrieker:
+      points: 4
+      time: 10s
+      minimum: 0.01
+      reset: 20s
+      demotion: 1
+    cobweb:
+      points: 1.5
+    dragon_head:
+      points: 4
+      time: 20s
+      minimum: 0.01
+      reset: 20s
+      demotion: 4
+    bell:
+      points: 1.5
+      time: 20s
+      minimum: 0.01
+      reset: 20s
+      demotion: 1.5
+    conduit:
+      points: 1.5
+      time: 20s
+      minimum: 0.01
+      reset: 20s
+      demotion: 1.5
+
+  block_place: #ставится блок
+    default:
+      enable: true
+      points: 1
+      time: 1m
+      minimum: 0.01
+      reset: 3s
+      demotion: 0.1
+  craft: #крафтится предмет
+    default:
+      enable: true
+      points: 0.1
+      time: 1s
+      minimum: 0.001
+      reset: 10s
+      demotion: 0.005
+    beacon:
+      points: 5
+    lodestone:
+      points: 5
+    enchanting_table:
+      points: 3
+    jukebox:
+      points: 2
+    shulker_box:
+      points: 3
+    respawn_anchor:
+      points: 3
+    dark_prismarine:
+      points: 1
+    tinted_glass:
+      points: 1
+    dripstone_block:
+      points: 1
+    anvil:
+      points: 2
+    end_crystal:
+      points: 5
+    tnt:
+      points: 0.5
+    recovery_compass:
+      points: 5
+    music_disc_5:
+      points: 3
+    turtle_helmet:
+      points: 3
+    golden_apple:
+      points: 3
+    quartz_block:
+      points: 1
+    netherite_ingot:
+      points: 10
+    conduit:
+      points: 4
+    amethyst_block:
+      points: 1
+  pickup: #подбирает предмет
+    default:
+      enable: true
+      points: 0.1
+      time: 5s
+      minimum: 0.001
+      reset: 30s
+      demotion: 0.05
+  kill_mob: #убивает монстра
+    default:
+      enable: true
+      points: 1
+      time: 30s
+      minimum: 0.1
+      reset: 10s
+      demotion: 0.1
+    bat:
+      points: 2
+    chicken:
+      points: 1.5
+    cod:
+      points: 2
+    cow:
+      points: 1.5
+    creeper:
+      points: 2
+    drowned:
+      points: 2
+    elder_guardian:
+      points: 10
+    endermite:
+      points: 1.5
+    evoker:
+      points: 2
+    ghast:
+      points: 3
+    husk:
+      points: 2
+    iron_golem:
+      points: 2
+    phantom:
+      points: 2
+    pig:
+      points: 1.5
+    hoglin:
+      points: 2
+    piglin_brute:
+      points: 3
+    pufferfish:
+      points: 2
+    rabbit:
+      points: 2
+    ravager:
+      points: 3
+    salmon:
+      points: 2
+    shulker:
+      points: 3
+    sheep:
+      points: 1.5
+    stray:
+      points: 2
+    villager:
+      points: 1.5
+    tropical_fish:
+      points: 2
+    vex:
+      points: 3
+    wandering_trader:
+      points: 3
+    warden:
+      points: 15
+    witch:
+      points: 2
+    wither_skeleton:
+      points: 2
+    zoglin:
+      points: 2
+    zombie_villager:
+      points: 3
+    zombified_piglin:
+      points: 2
+    ender_dragon:
+      points: 40
+    wither:
+      points: 40
+  damage: #когда игрок наносит урон кому либо
+    default:
+      enable: true
+      points: 0.01
+      time: 3s
+      minimum: 0.001
+      reset: 10s
+      demotion: 0.01
+  get_damage: #когда игрок получает урон
+    default:
+      enable: true
+      points: 0.1
+      time: 10s
+      minimum: 0.01
+      reset: 10s
+      demotion: 0.1
+  join: #когда игрок входит на сервер
+    default:
+      enable: true
+      points: 0.01
+      time: 10s
+      minimum: 0.001
+      reset: 10s
+      demotion: 0.001
+  quit: #когда игрок выходит с сервера
+    default:
+      enable: true
+      points: 0.01
+      time: 10s
+      minimum: 0.001
+      reset: 10s
+      demotion: 0.001
+  change_world: #когда игрок меняет мир
+    default:
+      enable: true
+      points: 0.1
+      time: 10s
+      minimum: 0.01
+      reset: 10s
+      demotion: 0.01
+  enter_bed: #когда игрок ложится спать
+    default:
+      enable: true
+      points: 10
+      time: 5s
+      minimum: 0.01
+      reset: 10s
+      demotion: 9
+  fishing: #когда игрок рыбачит
+    default:
+      enable: true
+      points: 5
+      time: 5m
+      minimum: 0.1
+      reset: 30s
+      demotion: 0.5
+  chat: #когда игрок общается
+    default:
+      enable: true
+      points: 0.5
+      time: 30s
+      minimum: 0.1
+      reset: 30s
+      demotion: 0.1
+  exp: #когда игрок поднимает xp !!!!!!!!!!!!!!!!!!!!!!!!
+    default:
+      enable: true
+      points: 10
+      time: 10s
+      minimum: 0.1
+      reset: 10s
+      demotion: 9
+  jump: #когда игрок прыгает
+    default:
+      enable: true
+      points: 0.1
+      time: 30s
+      minimum: 0.01
+      reset: 10s
+      demotion: 0.01
+  death: #когда игрок умер
+    default:
+      enable: true
+      points: 1
+      time: 10s
+      minimum: 0.01
+      reset: 30s
+      demotion: 0.1
+  kill_player: #когда игрок убивает игрока
+    default:
+      enable: true
+      points: 10
+      time: 10s
+      minimum: 0.01
+      reset: 30s
+      demotion: 0.1
+  enchant: #когда игрок чарится
+    default:
+      enable: true
+      points: 1
+      time: 10s
+      minimum: 0.01
+      reset: 30s
+      demotion: 0.1
+  food: #когда игрок кушает
+    default:
+      enable: true
+      points: 0.5
+      time: 2s
+      minimum: 0.01
+      reset: 10s
+      demotion: 0.1
+  inventory_open: #когда открывает инвентарь !!!
+    default:
+      enable: true
+      points: 0.05
+      time: 3s
+      minimum: 0.001
+      reset: 10s
+      demotion: 0.01
+  interact_block: #когда игрок взаимодействует с блоком, типа нажал на кнопку
+    default:
+      enable: true
+      points: 0.1
+      time: 3s
+      minimum: 0.001
+      reset: 20s
+      demotion: 0.01
+  raid_trigger: #когда игрок вступает в рейд
+    default:
+      enable: true
+      points: 50
+      time: 10m
+      minimum: 1
+      reset: 10m
+      demotion: 10
+  raid_win: #когда игрок победил в рейде
+    default:
+      enable: true
+      points: 50
+      time: 10m
+      minimum: 1
+      reset: 10m
+      demotion: 10
+  move: #когда игрок перемещается
+    default:
+      enable: true
+      points: 0.01
+      time: 10s
+      minimum: 0.001
+      reset: 10s
+      demotion: 0.001
+    strider:
+      points: 0.1
+    horse:
+      points: 0.08
+    camel:
+      points: 0.1
+    pig:
+      points: 0.1
+    boat:
+      points: 0.005
+
+# %activity_isafk% - получить информацию, в афк игрок или нет на данный момент
+
+#  %activity_time1% - время за вообще все время
+#  %activity_time2%
+#  %activity_time3%
+
+#  %activity_afktime% - время афк
+#  %activity_activetime% - время активное время, остальное все также как и ниже
+#
+#  %activity_time1_1%  - наигранное время за последний 1 день
+#  %activity_time1_1_1%  - наигранное время за последний 1 день один день назад
+#  %activity_points% - очки за все время БД
+#  %activity_points_1% - очки за последний день
+#  %activity_points_1_1% - очки за последний день 1 день назад
+#
+#  %activity_index% - индекс игрока

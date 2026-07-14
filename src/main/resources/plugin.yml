@@ -1,0 +1,8 @@
+name: VPIndex
+version: '${project.version}'
+main: me.vihnya.vpindex.VPIndex
+api-version: '1.21'
+softdepend:
+  - PlaceholderAPI
+commands:
+  index:

@@ -1,0 +1,153 @@
+Placeholders-TAB:
+  - '%activity_index%'
+  - '%activity_time%'
+  - '%activity_points%'
+  - '%activity_activetime%'
+  - '%activity_afktime%'
+SortMenu:
+  MenuName: Меню Сортировки
+  Heads:
+    DisplayName: ' '
+    Lore:
+      - ' &a%target_uppercase%'
+      - ' '
+      - ' &fНажмите &aЛКМ&f, чтобы '
+      - ' &fоткрыть меню'
+      - ' &fуправления игроком. '
+      - ' '
+      - ' &fЗначение: &a%value%'
+      - ' '
+    AmountPosition: true
+  Items:
+    NEXT:
+      DisplayName: ' '
+      Material: ARROW
+      Lore:
+        - ' &aСЛЕД. СТРАНИЦА'
+        - ' '
+        - ' &fНажмите, чтобы '
+        - ' &fПерейти на след.'
+        - ' &fстраницу меню.'
+        - ' '
+      HideAttributes: true
+      Amount: 1
+      Slot: 53
+      Action:
+        LEFT_CLICK:
+          - '[nextPage]'
+    PREVIOUS:
+      DisplayName: ' '
+      Material: ARROW
+      Lore:
+        - ' &aПРЕД. СТРАНИЦА'
+        - ' '
+        - ' &fНажмите, чтобы '
+        - ' &fПерейти на пред. '
+        - ' &fстраницу меню.'
+        - ' '
+      HideAttributes: true
+      Amount: 1
+      Slot: 45
+      Action:
+        LEFT_CLICK:
+          - '[previousPage]'
+    INFO:
+      DisplayName: ' '
+      Material: BOOK
+      Lore:
+        - ' &aИНФОРМАЦИЯ'
+        - ' '
+        - ' &fВ этом меню'
+        - ' &fсортируются игроки '
+        - ' &fпо значению из'
+        - ' &fплейсхолдеров.'
+        - ' '
+        - ' &fЕсли нажать &aЛКМ'
+        - ' &fпо голове игрока, то '
+        - ' &fоткроется меню'
+        - ' &fуправления игроком.'
+        - ' '
+      HideAttributes: true
+      Amount: 1
+      Slot: 49
+ControlMenu:
+  MenuName: Меню Управления
+  Size: 54
+  Items:
+    BAN:
+      DisplayName: ' '
+      Material: RED_DYE
+      Lore:
+        - ' &aЗАБАНИТЬ ИГРОКА'
+        - ' '
+        - ' &fНажмите, чтобы'
+        - ' &fзабанить игрока. '
+        - ' '
+      HideAttributes: true
+      Amount: 1
+      Slot: 0
+      Action:
+        LEFT_CLICK:
+          - '[player_command] ban %player%'
+    KICK:
+      DisplayName: ' '
+      Material: RED_DYE
+      Lore:
+        - ' &aКИКНУТЬ ИГРОКА'
+        - ' '
+        - ' &fНажмите, чтобы'
+        - ' &fкикнуть игрока. '
+        - ' '
+      HideAttributes: true
+      Amount: 1
+      Slot: 1
+      Action:
+        LEFT_CLICK:
+          - '[player_command] kick %player%'
+    MUTE:
+      DisplayName: ' '
+      Material: RED_DYE
+      Lore:
+        - ' &aЗАМЬЮТИТЬ ИГРОКА'
+        - ' '
+        - ' &fНажмите, чтобы'
+        - ' &fзамьютить игрока. '
+        - ' '
+      HideAttributes: true
+      Amount: 1
+      Slot: 2
+      Action:
+        LEFT_CLICK:
+          - '[player_command] mute %player%'
+    STATS:
+      DisplayName: ' '
+      Material: BOOK
+      Lore:
+        - ' &aСТАТИСТИКА'
+        - ' '
+        - ' &fНажмите, чтобы'
+        - ' &fвывести статистику '
+        - ' &fигрока.'
+        - ' '
+      HideAttributes: true
+      Amount: 1
+      Slot: 24
+      Action:
+        LEFT_CLICK:
+          - '[player_command] index player %player%'
+    BACK:
+      DisplayName: ' '
+      Material: ARROW
+      Lore:
+        - ' &aНАЗАД'
+        - ' '
+        - ' &fНажмите, чтобы'
+        - ' &fвернуться обратно '
+        - ' &fв меню сортировки. '
+        - ' '
+      HideAttributes: true
+      Amount: 1
+      Slot: 53
+      Action:
+        LEFT_CLICK:
+          - '[close]'
